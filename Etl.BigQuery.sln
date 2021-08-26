@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Etl.BigQuery.Service", "src\Etl.BigQuery.Service\Etl.BigQuery.Service.csproj", "{5C3EF3C6-E2AA-4115-9BBC-1BB5E0CBD4BD}"
+EndProject
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "DeploymentScripts", "DeploymentScripts\DeploymentScripts.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Etl.BigQuery", "src\Etl.BigQuery\Etl.BigQuery.csproj", "{C3D334B9-9E90-48FF-9014-7044AD584D1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseScripts", "DatabaseScripts", "{04A049A0-3654-4586-8F4A-5990F352B8F8}"
+	ProjectSection(SolutionItems) = preProject
+		BigQuerySchema.txt = BigQuerySchema.txt
+		BigQueryTables.sql = BigQueryTables.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{98BF969B-C4C8-4EA5-8A6D-75572DB718C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Etl.BigQuery.Tests", "test\Etl.BigQuery.Tests\Etl.BigQuery.Tests.csproj", "{EDE9EB3C-A92F-446B-A89D-BC8CB54731E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{31F67BE1-97C9-4CED-AC37-6344BF2EBDBE}"
+	ProjectSection(SolutionItems) = preProject
+		.mario.yml = .mario.yml
+		Jenkinsfile = Jenkinsfile
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C3EF3C6-E2AA-4115-9BBC-1BB5E0CBD4BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C3EF3C6-E2AA-4115-9BBC-1BB5E0CBD4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C3EF3C6-E2AA-4115-9BBC-1BB5E0CBD4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C3EF3C6-E2AA-4115-9BBC-1BB5E0CBD4BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3D334B9-9E90-48FF-9014-7044AD584D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D334B9-9E90-48FF-9014-7044AD584D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D334B9-9E90-48FF-9014-7044AD584D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D334B9-9E90-48FF-9014-7044AD584D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDE9EB3C-A92F-446B-A89D-BC8CB54731E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE9EB3C-A92F-446B-A89D-BC8CB54731E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE9EB3C-A92F-446B-A89D-BC8CB54731E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE9EB3C-A92F-446B-A89D-BC8CB54731E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EDE9EB3C-A92F-446B-A89D-BC8CB54731E2} = {98BF969B-C4C8-4EA5-8A6D-75572DB718C2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36598D28-6E7A-48EE-A64A-01706BAF5442}
+	EndGlobalSection
+EndGlobal

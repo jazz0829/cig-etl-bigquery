@@ -1,0 +1,8 @@
+Pipeline: dotnet-framework
+Solution: Etl.BigQuery.sln
+TestRunner: xunit
+SonarQubeProject:
+  Name: Exact Etl BigQuery
+  Key: exact-online-etl-BigQuery
+ProGetFeeds:
+  - cig-nuget
